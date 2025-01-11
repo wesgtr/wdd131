@@ -1,4 +1,4 @@
-body, h1, p {
+body, h1, h2, p, ul, li {
     margin: 0;
     padding: 0;
 }
@@ -33,4 +33,24 @@ footer {
     margin-top: 20px;
     font-size: 0.9rem;
     color: #555;
+}
+
+.exercise-list {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+.exercise-list li {
+    margin: 0.5rem 0;
+}
+
+.exercise-list li a {
+    text-decoration: none;
+    color: #007acc;
+    font-weight: bold;
+}
+
+.exercise-list li a:hover {
+    text-decoration: underline;
 }
