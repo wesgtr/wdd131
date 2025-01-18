@@ -69,3 +69,22 @@ footer img {
     width: 150px;
     height: auto;
 }
+
+body.dark {
+    background-color: #333;
+    color: white;
+}
+
+body.dark h2 {
+    color: #88C9F9;
+}
+
+body.dark img {
+    filter: invert(100%);
+}
+
+body.dark .container {
+    background-color: #000; /* Fundo preto */
+    color: #f5f5f5; /* Texto branco */
+    border-color: #555; /* Borda cinza escura */
+}
