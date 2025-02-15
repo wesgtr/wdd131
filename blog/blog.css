@@ -57,10 +57,23 @@ main {
 .book img {
     width: 120px;
     border-radius: 5px;
+    display: block;
+    margin: 0 auto;
 }
 
 .book-content h2 {
     color: #AF1B3F;
+    margin-top: 0;
+}
+
+.book-details {
+    text-align: right;
+    border-right: 2px solid #EFC69B;
+    padding-right: 10px;
+}
+
+.book-details p {
+    margin: 5px 0;
 }
 
 .filters {
