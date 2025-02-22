@@ -1,0 +1,115 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: white;
+}
+
+.card-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 450px;
+}
+
+.card {
+    width: 390px;
+    height: 265px;
+    border-radius: 10px;
+    background: #4285F4;
+    color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: Arial, sans-serif;
+    position: absolute;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-front {
+    z-index: 2;
+    left: 65px;
+    bottom: -105px;
+}
+
+.card-back {
+    z-index: 1;
+    right: 10px;
+    transform: translateX(50%);
+}
+
+.black-strip {
+    width: 100%;
+    height: 40px;
+    background: #2E3A46;
+    position: absolute;
+    top: 15px;
+    left: 0;
+}
+
+.cvv-container {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    text-align: right;
+}
+
+.cvv-box {
+    background: rgba(255, 255, 255, 0.3);
+    padding: 5px 8px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.small-text {
+    font-size: 10px;
+    opacity: 0.7;
+}
+
+.card label {
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.card input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.3);
+    color: white;
+    font-size: 14px;
+}
+
+.input-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.input-group input {
+    width: 45px;
+    text-align: center;
+}
+
+.submit-btn {
+    position: absolute;
+    bottom: -45px;
+    left: 10px;
+    width: 100px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 12px;
+}
+
