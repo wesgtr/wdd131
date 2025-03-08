@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap");
+
+:root {
+    --primary-color: #1B98E0;
+    --secondary-color: #59c3c3;
+    --text-dark: #333;
+    --text-light: #ebebeb;
+    --primary-font: Arial, Helvetica, sans-serif;
+    --heading-font: 'Amatic SC', cursive;
+}
+
+body {
+    font-family: var(--primary-font);
+    color: var(--text-dark);
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px;
+    font-family: var(--heading-font);
+    font-size: 2em;
+}
+
+header img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+input {
+    padding: 8px;
+    font-size: 1em;
+    width: 250px;
+}
+
+button {
+    padding: 8px;
+    font-size: 1em;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.recipes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.recipe {
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/*img {*/
+/*    width: 300px;*/
+/*    height: auto;*/
+/*}*/
+
+.recipe img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.tags .tag {
+    background-color: var(--secondary-color);
+    padding: 5px;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 5px;
+}
+
+.rating {
+    font-size: 1.2em;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    text-align: center;
+    padding: 10px;
+    font-size: 0.8em;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.social a img {
+    width: 30px;
+    height: auto;
+}
+
+@media (min-width: 600px) {
+    .recipes {
+        flex-direction: row;
+    }
+}
