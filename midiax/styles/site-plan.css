@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato");
+
+:root {
+    --primary-color: #1a1a1a;
+    --secondary-color: #ffd700;
+    --accent1-color: #ff5733;
+    --accent2-color: #ffffff;
+
+    --heading-font: "IM Fell French Canon SC", serif;
+    --paragraph-font: Lato, Helvetica, sans-serif;
+
+    --headline-color-on-white: var(--primary-color);
+    --headline-color-on-color: white;
+    --paragraph-color-on-white: var(--primary-color);
+    --paragraph-color-on-color: white;
+
+    --paragraph-background-color: var(--primary-color);
+    --nav-link-color: var(--primary-color);
+    --nav-background-color: var(--secondary-color);
+    --nav-hover-link-color: white;
+    --nav-hover-background-color: var(--primary-color);
+}
+
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4em;
+    font-size: 18px;
+    font-family: var(--paragraph-font);
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--headline-color-on-white);
+    text-transform: uppercase;
+}
+
+h2 {
+    text-align: center;
+}
+
+hr {
+    height: 3px;
+    margin: 35px 0;
+    background: var(--accent1-color);
+}
+
+header {
+    padding: 1em;
+    text-align: center;
+    color: var(--headline-color-on-color);
+    background-color: var(--paragraph-background-color);
+}
+
+header h1, header h2 {
+    color: var(--headline-color-on-color);
+}
+
+p {
+    color: var(--paragraph-color-on-white);
+    padding: 1em;
+}
+
+p.colored {
+    background-color: var(--paragraph-background-color);
+    color: var(--paragraph-color-on-color);
+}
+
+.colors {
+    width: 100%;
+    min-width: 350px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.colors th {
+    background-color: #999;
+}
+
+.colors td {
+    width: 25%;
+    height: 3em;
+    color: white;
+    font-weight: bold;
+}
+
+.primary {
+    background-color: var(--primary-color);
+}
+
+.secondary {
+    background-color: var(--secondary-color);
+    color: black;
+}
+
+.accent1 {
+    background-color: var(--accent1-color);
+}
+
+.accent2 {
+    background-color: var(--accent2-color);
+    color: black;
+}
+
+nav {
+    background-color: var(--nav-background-color);
+    line-height: 3em;
+    text-align: center;
+    font-size: 1.2em;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    padding: 1em;
+    text-decoration: none;
+    color: var(--nav-link-color);
+}
+
+nav a:hover {
+    color: var(--nav-hover-link-color);
+    background-color: var(--nav-hover-background-color);
+}
