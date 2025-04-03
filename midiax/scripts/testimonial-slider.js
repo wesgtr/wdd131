@@ -7,4 +7,4 @@ function showNextTestimonial() {
     testimonials[currentTestimonial].classList.add('active');
 }
 
-setInterval(showNextTestimonial, 4000); // muda a cada 4 segundos
+setInterval(showNextTestimonial, 4000);
